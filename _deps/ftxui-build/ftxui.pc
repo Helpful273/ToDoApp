@@ -1,9 +1,0 @@
-prefix="C:/Program Files (x86)/ToDoApp"
-libdir="C:/Program Files (x86)/ToDoApp/lib"
-includedir="C:/Program Files (x86)/ToDoApp/include"
-
-Name: ftxui
-Description: 
-Version: 7.0.1
-Cflags: -I${includedir}
-Libs: -L${libdir} -lftxui-component -lftxui-dom -lftxui-screen
