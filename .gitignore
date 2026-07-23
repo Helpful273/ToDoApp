@@ -52,8 +52,12 @@ Makefile
 install_manifest.txt
 compile_commands.json
 CPackConfig.cmake
-CPackSourceConfig.config
+CPackSourceConfig.cmake
 _deps
+
+#ninja
+.ninja_deps
+.ninja_log
 
 # Temporary files
 *.tmp
