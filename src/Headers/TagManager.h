@@ -3,11 +3,6 @@
 #include <memory>
 #include <map>
 
-/*
-how should i connect tag manager to task?
-
-*/
-
 template<typename T>
 class TagManager {
     private:
@@ -30,15 +25,19 @@ class TagManager {
          * @param tagName The name of the Tag to delete.
          */
         static void DeleteTag(std::string tagName);
+        
+        static void 
 };
 
 template<typename T>
 class Tag {
     private:
         std::vector<std::shared_ptr<T>> members;
+        std::string name;
 
     public:
         Tag(std::string tagName);
+        ~Tag();
 
         /**
          * "Tags" an object. It actually adds the pointer of the object into a
